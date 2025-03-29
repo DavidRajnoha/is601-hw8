@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "is601-hw8"
+version = "0.1.0"
+description = "Submission of hw8 for is601 subject"
+authors = ["David Rajnoha <drajnoha@seznam.cz>"]
+readme = "README.md"
+packages = [
+    {include = "app"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^8.3.5"
+
+[tool.poetry.scripts]
+app = "main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
